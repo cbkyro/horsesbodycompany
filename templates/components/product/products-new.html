@@ -1,0 +1,41 @@
+
+{{#if grid}}
+  <section class="products-new {{theme_settings.background-for-new-products}}">
+    <div class="layout-container">
+         <h1 class="section-title">
+          How the Equine Body Buddy Works
+        </h1>
+        <center><h2> SELF-MASSAGE | SELF-RUB | SELF-SCRATCH</h2></center>
+        <img src="https://cdn3.bigcommerce.com/s-lxqncsv69f/product_images/uploaded_images/equine-body-buddy-installation.jpg">
+      
+
+
+
+        
+        
+        
+        
+        
+        
+<table align="center"> 
+<tbody>
+<tr>
+<td><iframe width="480" height="235" src="https://www.youtube.com/embed/aZPEUD7qJLU" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe></td>
+<td><iframe width="480" height="235" src="https://www.youtube.com/embed/qR4FIKxuKjc" frameborder="0" allowfullscreen></iframe></td>
+</tr>
+</tbody>
+</table>
+
+      <h1 class="section-title">The Equine Body Buddy Products</h1>
+      <center><H2> BODY SOOTHING TOOL FOR YOUR HORSE</H2></center>
+      <img src="https://store-lxqncsv69f.mybigcommerce.com/product_images/uploaded_images/bodybuddydiagram2.jpg">
+      <p>A revolutionary new self-massage tool available for your horse when you aren't. Perfect for performance horses or horses that are kept in a barn or stall. This unique tool allows your horse to sooth themselves! The Equine Body Buddy tool can easily be installed on any barn wall or post providing a solution to their physical needs that they can't often get in a enclosed area. The Equine Body Buddy device is designed with a natural non-toxic rubber and to be a pliable, safe, and enjoyable experience for your equine friend or partner. We all know that body therapies such massage and chiropractic improve athletic performance and maximize health and vitality by increasing circulation, relieving muscle tensions, improving the nervous system function and overall well being. This device offers horses the ability on their own accord, to engage in an activity that provides similarly equal effects as receiving a massage or a chiropractic session. When mounted in their stall or enclosure it is available to them 24/7. </p>
+
+      <div class="product-grid">
+        {{#each grid}}
+          {{> components/product/product-item this show_quickshop=true show_rating=true default_image=../default_image}}
+        {{/each}}
+      </div>
+    </div>
+  </section>
+{{/if}}

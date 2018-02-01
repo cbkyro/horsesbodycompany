@@ -29,14 +29,33 @@
             <span class="header-nav-label">{{lang 'header.navigation.home'}}</span>
           </a>
         </li>
-
-        <li class="header-nav-item">
+        
+        <!-- Original before adding "single-line" menu option below -->
+        <!-- <li class="header-nav-item">
           <a href="#" data-dropdown-toggle data-dropdown-center>
             <span class="header-nav-label">{{lang 'header.navigation.products'}}</span>
             <i class="header-nav-arrow"></i>
           </a>
-          {{> components/header/dropdown-products}}
-        </li>
+          {{!> components/header/dropdown-products}}
+        </li> -->
+        
+        {{#if theme_settings.header-menu-style '==' 'single-line'}}
+          {{#each categories}}
+            <li class="header-nav-item">
+              <a href="{{url}}">
+                <span class="header-nav-label">{{name}}</span>
+              </a>
+            </li>
+          {{/each}}
+        {{else if theme_settings.header-menu-style '==' 'mega-menu'}}
+          <li class="header-nav-item">
+            <a href="#" data-dropdown-toggle data-dropdown-center>
+              <span class="header-nav-label">{{lang 'header.navigation.products'}}</span>
+              <i class="header-nav-arrow"></i>
+            </a>
+            {{> components/header/dropdown-products}}
+          </li>
+        {{/if}}
 
         {{#all theme_settings.header-enable-blog settings.blog_enabled}}
           {{#if blog.name.length ">" 0}}

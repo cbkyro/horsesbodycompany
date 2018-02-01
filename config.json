@@ -334,7 +334,7 @@
         "h2-font-weight": "normal",
         "h3-font-size": 24,
         "h3-font-weight": "bold",
-        "header-menu-style": "mega-menu",
+        "header-menu-style": "single-line",
         "header-menu-mega-columns": 5,
         "header-enable-border": "true",
         "header-enable-blog": true,
